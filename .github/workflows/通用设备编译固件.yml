@@ -54,7 +54,7 @@ jobs:
           sudo -E apt-get -y install clang
           #sudo -E snap install go --classic
           #sudo -E apt-get remove golang
-          #sudo -E add-apt-repository ppa:longsleep/golang-backports
+          sudo -E add-apt-repository ppa:longsleep/golang-backports
           #sudo -E apt update
           #sudo -E apt install golang-go
           sudo -E apt-get update
