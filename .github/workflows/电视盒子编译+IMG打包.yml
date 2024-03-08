@@ -212,7 +212,7 @@ jobs:
           sudo -E apt-get -y update
           sudo -E apt-get -y purge azure-cli ghc* zulu* llvm* firefox google* dotnet* powershell openjdk* mongodb* moby* || true
           sudo -E apt-get -y install $(curl -fsSL https://is.gd/depend_ubuntu2204_openwrt)
-          sudo -E apt-get -y install clang              
+          sudo -E apt-get -y install clang
           #sudo -E snap install go --classic
           sudo -E apt-get remove golang
           sudo -E add-apt-repository ppa:longsleep/golang-backports
