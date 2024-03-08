@@ -53,10 +53,12 @@ jobs:
           sudo -E apt-get -y install $(curl -fsSL https://is.gd/depend_ubuntu2204_openwrt)
           sudo -E apt-get -y install clang
           #sudo -E snap install go --classic
-          sudo -E apt-get remove golang
-          sudo -E add-apt-repository ppa:longsleep/golang-backports
-          sudo -E apt update
-          sudo -E apt install golang-go
+          #sudo -E apt-get remove golang
+          #sudo -E add-apt-repository ppa:longsleep/golang-backports
+          #sudo -E apt update
+          #sudo -E apt install golang-go
+          sudo -E apt-get update
+          sudo -E apt-get upgrade golang
           sudo -E go version
           sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
