@@ -221,6 +221,7 @@ jobs:
           sudo -E apt update
           sudo -E apt install golang-go
           sudo -E go version
+          sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
           sudo -E apt-get -y autoremove --purge
           sudo -E apt-get clean
