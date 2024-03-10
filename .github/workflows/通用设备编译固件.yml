@@ -17,7 +17,8 @@ on:
         options:
           - openwrt-main
           - lede-master
-          - lede-fuqiang
+          - lede-x86-fw876
+          - lede-x86-kenzok8
           - immortalwrt-master
           - Lienol-master
       
