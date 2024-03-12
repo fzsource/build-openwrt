@@ -61,6 +61,8 @@ jobs:
           sudo -E apt-get update
           sudo -E apt-get upgrade golang
           sudo -E go version
+          sudo -E rm -rf feeds/packages/lang/golang
+          sudo -E git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
           sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
           sudo -E apt-get -y autoremove --purge
