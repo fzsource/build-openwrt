@@ -213,12 +213,6 @@ jobs:
           sudo -E apt-get -y purge azure-cli ghc* zulu* llvm* firefox google* dotnet* powershell openjdk* mongodb* moby* || true
           sudo -E apt-get -y install $(curl -fsSL https://is.gd/depend_ubuntu2204_openwrt)
           sudo -E apt-get -y install clang
-          #sudo -E snap install go --classic
-          sudo -E apt-get remove golang
-          sudo -E add-apt-repository ppa:longsleep/golang-backports
-          sudo -E apt update
-          sudo -E apt install golang-go
-          sudo -E go version
           sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
           sudo -E apt-get -y autoremove --purge
@@ -274,6 +268,9 @@ jobs:
 
       - name: Update feeds
         run: cd openwrt/ && ./scripts/feeds update -a
+          rm -rf feeds/luci/applications/luci-app-mosdns && rm -rf feeds/packages/net/{alist,adguardhome,smartdns}
+          rm -rf feeds/packages/lang/golang
+          git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
       - name: Install feeds
         run: cd openwrt/ && ./scripts/feeds install -a
