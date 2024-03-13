@@ -19,8 +19,8 @@ on:
           - lede-master
           - immortalwrt-master
           - Lienol-master
-          - lede-n1-kenzok8
-          - lede-n1-fw876
+          - lede-kenzok8
+          - lede-fw876
       openwrt_board:
         description: "Select device board"
         required: false
