@@ -18,7 +18,7 @@ on:
           - openwrt-main
           - lede-master
           - lede-x86-fw876
-          - lede-x86-xiaorouji
+          - lede-x86-fw876-xiaorouji
           - lede-x86-kenzok8
           - immortalwrt-master
           - Lienol-master
