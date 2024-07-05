@@ -162,7 +162,7 @@ on:
       kernel_usage:
         description: "Set the tags of the stable kernel."
         required: false
-        default: "stable"
+        default: "flippy"
         type: choice
         options:
           - stable
@@ -180,7 +180,7 @@ on:
       builder_name:
         description: "Set OpenWrt builder signature."
         required: false
-        default: "angel"
+        default: "smsource"
         type: choice
         options:
           - angel
