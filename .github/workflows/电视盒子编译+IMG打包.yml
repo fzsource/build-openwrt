@@ -12,20 +12,20 @@ on:
       source_branch:
         description: "Select the source branch"
         required: false
-        default: "openwrt-main"
+        default: "lede-n1-fw876"
         type: choice
         options:
           - openwrt-main
           - lede-master
           - immortalwrt-master
-          - Lienol-master
-          - lede-n1-kenzok8
+          - Lienol-master          
           - lede-n1-fw876
           - lede-n1-fw876-xiaorouji
+          - lede-n1-kenzok8
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905d"
         type: choice
         options:
           - all
@@ -136,14 +136,14 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "5.15.103_6.1.77"
+        default: "6.1.101_6.1.119"
         type: choice
         options:
           - 5.4.184_5.4.282
           - 5.10.107_5.10.224
           - 5.15.148_5.15.165
-          - 6.1.101_6.1.106
-          - 6.6.36_6.6.47
+          - 6.1.101_6.1.119
+          - 6.6.40_6.6.67
           - 5.4.184
           - 5.10.107
           - 5.15.148
