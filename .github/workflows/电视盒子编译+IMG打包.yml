@@ -216,8 +216,6 @@ jobs:
           sudo -E apt-get -y purge azure-cli ghc* zulu* llvm* firefox google* dotnet* powershell openjdk* mongodb* moby* || true
           sudo -E apt-get -y install $(curl -fsSL https://is.gd/depend_ubuntu2204_openwrt)
           sudo -E apt-get -y install clang
-          sudo -E apt-get -y install $(curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -)
-          sudo -E apt-get install -y nodejs
           sudo -E systemctl daemon-reload
           #sudo -E apt-get -y full-upgrade
           sudo -E apt-get -y autoremove --purge
