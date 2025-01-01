@@ -21,12 +21,13 @@ on:
       openwrt_kernel:
         description: "Select kernel version"
         required: false
-        default: "6.1.101_6.1.119"
+        default: "5.15.105_6.6.1"
         type: choice
         options:
           - 5.4.184_5.4.282
           - 5.10.107_5.10.224
           - 5.15.148_5.15.165
+          - 5.15.105_6.6.1
           - 6.1.101_6.1.119
           - 6.6.40_6.6.67
           - 5.4.184
