@@ -196,7 +196,7 @@ jobs:
     - name: 发布固件
       uses: ncipollo/release-action@v1
       with:
-        tag: openwrt_armvirt_v8_${{ inputs.source_branch }}_${{ env.PACKAGED_OUTPUTDATE }}
+        tag: openwrt_armvirt_v8_${{ inputs.source_branch }}
         artifacts: /workdir/upload/*
         allowUpdates: true
         token: ${{ secrets.GITHUB_TOKEN }}
